@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/output.css">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dist/output.css" />
+  <title>Tip Calculator</title>
 </head>
-<body class="bg-slate-400 text-white">
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias debitis facere a animi soluta recusandae. Aspernatur, beatae expedita at veritatis eius fuga sed libero dolorum deserunt commodi officia voluptate maiores.
-  <script src="script.js"></script>
+
+<body class="bg-gray-100 box-border font-sans">
+
+   <div class="bg-white max-w-[600px] my-[100px] mx-6 md:mx-auto p-5 shadow-md shadow-gray-600 rounded-md">
+     <h1 class="text-center text-4xl font-bold">Tip Calculator</h1>
+     <p class="text-sm mt-4 mb-3">
+      Enter the bill amount and tip percentage to calculate the total:
+    </p>
+    <!--bill input-->
+    <label for="bill" class="" >Bill amount:</label>
+    <input type="number" name="bill" id="bill" class="border-2 rounded my-3 w-full p-2" />
+     <br />
+    <!--percentage input-->
+    <label for="tip">Tip percentage:</label>
+     <input type="number" name="tip" id="tip" class=" border-2 rounded my-3 w-full p-2">
+    <br>
+     
+    <!--button-->           
+        <button class="border-2 text-white cursor-pointer bg-green-500 p-[10px] hover:bg-green-600 rounded-md my-2 uppercase font-semibold text-2xl w-full transition-all ease-in-out" id="calculate">Calculate</button>
+    <br>
+    <label for="total">Total:</label>
+    <span id="total" class="text-2xl font-bold"> </span>
+    </div>
+    <script src=" script.js"></script>
 </body>
+
 </html>
